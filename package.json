@@ -1,0 +1,38 @@
+{
+  "name": "vim_to_vsc_snips",
+  "version": "1.0.0",
+  "description": "Converts Vim snippets to Visual Studio Code snippets.",
+  "main": "src/app.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jfehrman/vim_to_vsc_snips.git"
+  },
+  "keywords": [
+    "vim",
+    "visual",
+    "studio",
+    "code",
+    "vs",
+    "vsc",
+    "snippets",
+    "snipmate",
+    "snip",
+    "autocomplete",
+    "tabcomplete"
+  ],
+  "author": "Joseph Fehrman",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jfehrman/vim_to_vsc_snips/issues"
+  },
+  "homepage": "https://github.com/jfehrman/vim_to_vsc_snips#readme",
+  "dependencies": {
+    "commander": "^2.15.1"
+  },
+  "devDependencies": {
+    "jest": "^22.4.3"
+  }
+}
