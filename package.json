@@ -4,6 +4,8 @@
   "description": "Converts Vim snippets to Visual Studio Code snippets.",
   "main": "src/app.js",
   "scripts": {
+    "build": "babel ./src --out-dir ./dist",
+    "start": "npm run build && node dist/app.js",
     "test": "jest"
   },
   "repository": {
