@@ -6,7 +6,7 @@
   "scripts": {
     "build": "babel ./src --out-dir ./dist",
     "start": "npm run build && node dist/app.js",
-    "test": "jest"
+    "test": "npm start -- -f test_data/javascript_react.snippets"
   },
   "repository": {
     "type": "git",
