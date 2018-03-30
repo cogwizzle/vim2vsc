@@ -1,0 +1,27 @@
+# Import react.
+snippet react_import
+	import React from 'react';
+# Create new component.
+snippet react_create
+	export default class ${1:ComponentName} extends React.Component {
+		
+		/**
+		 * Default constructor.
+		 *
+		 * @param {Object[]} props Tag properties.
+		 */
+		constructor(props) {
+			super(props);
+		}
+
+		/**
+		 * JSX based render function.
+		 *
+		 * @return {string} JSX DOM.
+		 */
+		render() {
+			return (
+				${2:<div>TODO implement function</div>}
+			);
+		}
+	}
