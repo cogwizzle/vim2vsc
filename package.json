@@ -1,6 +1,6 @@
 {
   "name": "vim2vsc",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Converts Vim snippets to Visual Studio Code snippets.",
   "main": "dist/app.js",
   "scripts": {
@@ -9,7 +9,7 @@
     "test": "npm start -- -f test_data/javascript_react.snippets"
   },
   "bin": {
-    "vim2vsc" : "dist/app.js"
+    "vim2vsc": "dist/app.js"
   },
   "repository": {
     "type": "git",
