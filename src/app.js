@@ -1,3 +1,4 @@
+#!/usr/bin/env node
 import cli from 'commander';
 import projectProperties from '../package.json';
 import convertVimSnippets from './convert_vim_snippets';

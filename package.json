@@ -9,7 +9,7 @@
     "test": "npm start -- -f test_data/javascript_react.snippets"
   },
   "bin": {
-    "vim2vsc" : "dist/app.js"
+    "vim2vsc" : "dist/app.js,"
   },
   "repository": {
     "type": "git",
