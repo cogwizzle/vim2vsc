@@ -8,6 +8,9 @@
     "start": "npm run build && node dist/app.js",
     "test": "npm start -- -f test_data/javascript_react.snippets"
   },
+  "bin": {
+    "vim2vsc" : "dist/app.js"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/jfehrman/vim_to_vsc_snips.git"
