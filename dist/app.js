@@ -16,7 +16,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 _commander2.default.version(_package2.default.version).option('-f --file <file>', 'Input file.').option('-o --out <out>', 'Output file.').parse(process.argv);
 
-if (!(_commander2.default.file && _commander2.default.out)) {
+if (!_commander2.default.file) {
 
   _commander2.default.help();
 } else {

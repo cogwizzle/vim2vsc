@@ -1,5 +1,5 @@
 {
-  "name": "vim_to_vsc_snips",
+  "name": "vim2vsc",
   "version": "1.0.0",
   "description": "Converts Vim snippets to Visual Studio Code snippets.",
   "main": "src/app.js",
