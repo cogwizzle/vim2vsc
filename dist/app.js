@@ -14,6 +14,12 @@ var _convert_vim_snippets2 = _interopRequireDefault(_convert_vim_snippets);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-_commander2.default.version(_package2.default.version).option('-f', '--file <file>').action(function (file, out) {
-  (0, _convert_vim_snippets2.default)(file, out);
-}).parse(process.argv);
+_commander2.default.version(_package2.default.version).option('-f --file <file>', 'Input file.').option('-o --out <out>', 'Output file.').parse(process.argv);
+
+if (!(_commander2.default.file && _commander2.default.out)) {
+
+  _commander2.default.help();
+} else {
+
+  (0, _convert_vim_snippets2.default)(_commander2.default.file, _commander2.default.out);
+}

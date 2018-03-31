@@ -12,7 +12,7 @@ var _util = require('util');
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-exports.default = async function (file, out) {
+exports.default = function (file, out) {
 
   _fs2.default.readFile(file, 'utf-8', function (err, data) {
 
@@ -40,7 +40,9 @@ exports.default = async function (file, out) {
       }
     });
 
-    var out = file + '.vs';
-    _fs2.default.writeFile(out, JSON.stringify(snippetJson, undefined, 2));
+    var outFile = out || file + '.vs';
+    _fs2.default.writeFile(outFile, JSON.stringify(snippetJson, undefined, 2), function (error) {
+      if (error) console.log(error);
+    });
   });
 };

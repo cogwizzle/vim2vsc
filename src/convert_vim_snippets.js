@@ -1,7 +1,7 @@
 import fs from 'fs';
 import { log } from 'util';
 
-export default async (file, out) => {
+export default (file, out) => {
 
   fs.readFile(file, 'utf-8', (err, data) => {
 
@@ -29,7 +29,9 @@ export default async (file, out) => {
       }
     });
 
-    const out = `${file}.vs`;
-    fs.writeFile(out, JSON.stringify(snippetJson, undefined, 2));
+    const outFile = out || `${file}.vs`;
+    fs.writeFile(outFile, JSON.stringify(snippetJson, undefined, 2), (error) => {
+      if (error) console.log(error);
+    });
   });
 };
