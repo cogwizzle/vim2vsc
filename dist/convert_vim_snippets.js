@@ -40,7 +40,7 @@ exports.default = function (file, out) {
       }
     });
 
-    var outFile = out || file + '.vs';
+    var outFile = out || file + '.vscs';
     _fs2.default.writeFile(outFile, JSON.stringify(snippetJson, undefined, 2), function (error) {
       if (error) console.log(error);
     });
