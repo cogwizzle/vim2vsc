@@ -2,7 +2,7 @@
   "name": "vim2vsc",
   "version": "1.0.0",
   "description": "Converts Vim snippets to Visual Studio Code snippets.",
-  "main": "src/app.js",
+  "main": "dist/app.js",
   "scripts": {
     "build": "babel ./src --out-dir ./dist",
     "start": "npm run build && node dist/app.js",
