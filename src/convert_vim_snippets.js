@@ -29,7 +29,7 @@ export default (file, out) => {
       }
     });
 
-    const outFile = out || `${file}.vs`;
+    const outFile = out || `${file}.vscs`;
     fs.writeFile(outFile, JSON.stringify(snippetJson, undefined, 2), (error) => {
       if (error) console.log(error);
     });
