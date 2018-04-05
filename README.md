@@ -35,4 +35,4 @@ Please [open an issue](https://github.com/jfehrman/vim2vsc/issues/new) for suppo
 
 ## Contributing
 
-Please contribute using [Github Flow](https://guides.github.com/introduction/flow/). Create a branch, add commits, and [open a pull request](https://github.com/fraction/readme-boilerplate/compare/).
+Please contribute using [Github Flow](https://guides.github.com/introduction/flow/). Create a branch, add commits, and [open a pull request](https://github.com/jfehrman/vim2vsc/pulls).
