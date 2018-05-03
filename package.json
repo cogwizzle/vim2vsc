@@ -36,7 +36,8 @@
   "homepage": "https://github.com/jfehrman/vim_to_vsc_snips#readme",
   "dependencies": {
     "commander": "^2.15.1",
-    "file-system": "^2.2.2"
+    "file-system": "^2.2.2",
+    "hoek": "^5.0.3"
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",
